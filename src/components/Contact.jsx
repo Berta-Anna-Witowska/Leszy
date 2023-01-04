@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "./Footer";
-import Header from "./Header";
+import Nav from "./Nav";
 
 export default function Contact() {
   return (
     <>
-      <Header />
+      <Nav />
       <h1>Kontakt</h1>
       <Footer />
     </>

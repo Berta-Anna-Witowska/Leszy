@@ -1,0 +1,54 @@
+@import "../settings/colors";
+.header {
+  height: 100vh;
+  background-image: url("../../assets/bc1.jpg");
+  background-size: cover;
+  background-position: top;
+
+  color: $color-white;
+  text-shadow: 0px 3px 6px $color-dark1;
+
+  .overlay {
+    width: auto;
+    height: 100vh;
+
+    background-color: $color-green-transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .header-pic {
+      width: 22%;
+    }
+    .homepage-quote {
+      height: 100vh;
+      margin-left: 3rem;
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      justify-content: center;
+      h4 {
+        line-height: 8rem;
+      }
+      h2 {
+        margin-top: 4rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.quote-banner {
+  height: 30vh;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-pictures {
+  height: 10vh;
+}
