@@ -49,7 +49,7 @@ export default function Contact() {
         <div className="sidepanel">
           <div className="overlay">
             <h1>
-              Najprostsza droga do Wszechświata prowadzi przez dzikość lasu.
+              "Najprostsza droga do Wszechświata prowadzi przez dzikość lasu."
             </h1>
             <h2>John Muir</h2>
           </div>
@@ -82,7 +82,7 @@ export default function Contact() {
         </form>
       </section>
       <div className="quote-banner">
-        <h2>I w głąb lasu podążam, by zatracić rozum a odnaleźć duszę.</h2>
+        <h2>"I w głąb lasu podążam, by zatracić rozum a odnaleźć duszę."</h2>
         <h3>John Muir</h3>
       </div>
       <Newsletter />

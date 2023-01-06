@@ -1,6 +1,8 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 
+import logoDark from "../assets/logo/Logo-dark.png";
+
 import "../scss/elements/_footer.scss";
 
 export default function Footer() {
@@ -16,7 +18,7 @@ export default function Footer() {
       </ul>
       <div className="footer-centralsection">
         <div className="footer-logo" onClick={() => navigate("/")}>
-          <i className="fa-solid fa-tree" />
+          <img className="logo-pic" src={logoDark} alt="logo" />
           <h2 className="logo-name">Leszy</h2>
         </div>
         <span className="copyright"> Copyright &#169; Berta Anna Witowska</span>

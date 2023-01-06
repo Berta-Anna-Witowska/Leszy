@@ -3,7 +3,7 @@
 
 .page-nav {
   width: 97%;
-  padding: 1.8rem 2rem 2rem 2rem;
+  padding: 2.6rem 2rem;
 
   font-size: 1.2rem;
   text-align: center;
@@ -36,14 +36,18 @@
 
   .page-nav-logo {
     width: 10%;
+    margin-top: 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     left: 45%;
+    top: 0;
     cursor: pointer;
-
+    .logo-pic {
+      height: 4rem;
+    }
     i {
       font-size: 2rem;
     }

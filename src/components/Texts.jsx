@@ -34,7 +34,7 @@ export default function Texts() {
       <div className="texts header">
         <div className="overlay">
           <h1>
-            Natura jest nieskończoną kombinacją
+            "Natura jest nieskończoną kombinacją"
             <br /> i powtarzaniem zaledwie kilku praw.
           </h1>
           <h2>Ralph Waldo Emerson</h2>

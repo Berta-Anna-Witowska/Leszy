@@ -2,6 +2,8 @@ import React from "react";
 import {useNavigate} from "react-router-dom";
 import "../scss/elements/_nav.scss";
 
+import logoWhite from "../assets/logo/Logo-white.png";
+
 export default function Nav(backgroundColor) {
   const navigate = useNavigate();
 
@@ -17,7 +19,7 @@ export default function Nav(backgroundColor) {
         <li onClick={() => navigate("/contact")}>Kontakt</li>
       </ul>
       <div className="page-nav-logo">
-        <i className="fa-solid fa-tree" />
+        <img className="logo-pic" src={logoWhite} alt="logo" />
         <h2 className="logo-name">Leszy</h2>
       </div>
       <ul className="page-nav-socialmedia">
