@@ -27,11 +27,18 @@
       padding: 1rem;
 
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
 
       cursor: pointer;
     }
+  }
+
+  .home {
+    font-size: 1.2rem;
+  }
+  .contact {
+    font-size: 1.4rem;
   }
 
   .page-nav-logo {

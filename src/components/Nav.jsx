@@ -10,13 +10,15 @@ export default function Nav(backgroundColor) {
   return (
     <nav className="page-nav" style={backgroundColor}>
       <ul className="page-nav-list">
-        <li onClick={() => navigate("/")}>
+        <li className="nav-icon home" onClick={() => navigate("/")}>
           <i className="fa-solid fa-house" />
         </li>
         <li onClick={() => navigate("/gallery")}>Galeria</li>
         <li onClick={() => navigate("/texts")}>Teksty</li>
         <li onClick={() => navigate("/about-me")}>O mnie</li>
-        <li onClick={() => navigate("/contact")}>Kontakt</li>
+        <li className="nav-icon contact" onClick={() => navigate("/contact")}>
+          <i className="fa-regular fa-envelope" />
+        </li>
       </ul>
       <div className="page-nav-logo">
         <img className="logo-pic" src={logoWhite} alt="logo" />

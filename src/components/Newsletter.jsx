@@ -20,7 +20,7 @@ export default function Newsletter(backgroundColor) {
           value="Submit"
         >
           {/* Wyślij */}
-          <i className="fa-solid fa-envelope-open-text"></i>
+          <i className="fa-solid fa-check-to-slot"></i>
         </button>
       </form>
     </section>

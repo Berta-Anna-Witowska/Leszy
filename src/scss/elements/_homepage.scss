@@ -41,7 +41,21 @@
 
 .homepage-pictures {
   min-height: 10vh;
+  margin: 4rem 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   .hompage-pic {
-    height: 100px;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    margin: 2rem;
+    object-fit: cover;
+    object-position: bottom;
+
+    border: 8px solid white;
+    box-shadow: 0px 3px 6px $color-dark1;
   }
 }

@@ -15,6 +15,7 @@ export default function Footer() {
         <li onClick={() => navigate("/about-me")}>O mnie</li>
         <li onClick={() => navigate("/gallery")}>Galeria</li>
         <li onClick={() => navigate("/texts")}>Teksty</li>
+        <li onClick={() => navigate("/contact")}>Kontakt</li>
       </ul>
       <div className="footer-centralsection">
         <div className="footer-logo" onClick={() => navigate("/")}>
