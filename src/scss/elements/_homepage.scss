@@ -40,5 +40,8 @@
 }
 
 .homepage-pictures {
-  height: 10vh;
+  min-height: 10vh;
+  .hompage-pic {
+    height: 100px;
+  }
 }
