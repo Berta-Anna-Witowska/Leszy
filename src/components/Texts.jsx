@@ -1,29 +1,53 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+
 import Nav from "./Nav";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 
 import "../scss/elements/_texts.scss";
 
+import {supabase} from "../services";
+
 export default function Texts() {
+  const [allPosts, setAllPost] = useState(null);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      let {data: posts, error} = await supabase.from("posts").select("*");
+
+      if (!error) {
+        setAllPost(posts);
+      }
+      if (error) {
+        // toaster.danger("Coś poszło nie tak!");
+        console.log(error);
+      }
+      console.log(posts[0].text);
+    };
+
+    fetchPosts();
+  }, []);
+
   return (
     <>
       <Nav />
       <div className="texts header">
         <div className="overlay">
           <h1>
-            Natura jest nieskończoną kombinacją i powtarzaniem zaledwie kilku
-            praw.
+            Natura jest nieskończoną kombinacją
+            <br /> i powtarzaniem zaledwie kilku praw.
           </h1>
           <h2>Ralph Waldo Emerson</h2>
         </div>
       </div>
       <section className="posts">
-        <ul className="posts-list">
-          <li className="post-name">tekst 1</li>
+        <ol className="posts-list">
+          {allPosts &&
+            allPosts.map((el) => <li key={el.id}>&#8226; {el.title}</li>)}
+          {/* <li className="post-name">tekst 1</li>
           <li className="post-name">tekst 2</li>
-          <li>tekst 3</li>
-        </ul>
+          <li>tekst 3</li> */}
+        </ol>
         <div className="post">
           <h3 className="post-title">Tytuł posta</h3>
           <p className="post-text">

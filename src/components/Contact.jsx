@@ -1,11 +1,47 @@
-import React from "react";
+import React, {useRef} from "react";
+
 import Nav from "./Nav";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 
 import "../scss/elements/_contact.scss";
 
+import emailjs from "@emailjs/browser";
+import {publicKEY, emailJS_serviceKEY, template} from "../services";
+
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const [email, name, message] = e.target.elements;
+
+    if (name.value.length < 3) {
+      // toaster.warning("Imię musi się składać co najmniej z 3 znaków.");
+      console.log("Imię musi się składać co najmniej z 3 znaków.");
+      return;
+    }
+    if (message.value.length < 5) {
+      // toaster.warning("Wiadomość musi składać się z co najmniej 5 znaków.");
+      console.log("Wiadomość musi składać się z co najmniej 5 znaków.");
+      return;
+    }
+
+    emailjs
+      .sendForm(emailJS_serviceKEY, template, form.current, publicKEY)
+      .then(
+        (result) => {
+          // toaster.success("Wiadomość wysłana!");
+          console.log("Wiadomość wysłana!");
+        },
+        (error) => {
+          // toaster.danger("Wysyłanie nie powiodło się!");
+          console.log("Wysyłanie nie powiodło się !");
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <Nav backgroundColor="#262527d1" />
@@ -18,7 +54,7 @@ export default function Contact() {
             <h2>John Muir</h2>
           </div>
         </div>
-        <form className="contact-form">
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <input
             type="email"
             name="user_email"

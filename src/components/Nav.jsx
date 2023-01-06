@@ -11,9 +11,9 @@ export default function Nav(backgroundColor) {
         <li onClick={() => navigate("/")}>
           <i className="fa-solid fa-house" />
         </li>
-        <li onClick={() => navigate("/about-me")}>O mnie</li>
         <li onClick={() => navigate("/gallery")}>Galeria</li>
         <li onClick={() => navigate("/texts")}>Teksty</li>
+        <li onClick={() => navigate("/about-me")}>O mnie</li>
         <li onClick={() => navigate("/contact")}>Kontakt</li>
       </ul>
       <div className="page-nav-logo">
