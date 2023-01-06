@@ -1,0 +1,23 @@
+@import "../settings/colors";
+
+.texts {
+  background-image: url("../../assets/bc3.jpg");
+  background-position: top;
+}
+.posts {
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-list {
+    li {
+      font-size: 1.2rem;
+    }
+  }
+  .post-text {
+    width: 60vw;
+
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+}

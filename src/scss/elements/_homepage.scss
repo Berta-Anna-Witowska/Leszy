@@ -1,5 +1,5 @@
 @import "../settings/colors";
-.header {
+.homepage-header {
   height: 100vh;
   background-image: url("../../assets/bc1.jpg");
   background-size: cover;
@@ -27,7 +27,6 @@
       margin-left: 3rem;
       display: flex;
       flex-direction: column;
-      //   align-items: center;
       justify-content: center;
       h4 {
         line-height: 8rem;
@@ -38,15 +37,6 @@
       }
     }
   }
-}
-
-.quote-banner {
-  height: 30vh;
-  background-color: $color-white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .homepage-pictures {

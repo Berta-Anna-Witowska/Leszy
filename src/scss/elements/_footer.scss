@@ -1,0 +1,49 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: $color-white;
+  box-shadow: 10px 3px 10px $color-dark1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-menu {
+    margin-left: 2rem;
+    line-height: 1.3rem;
+    li {
+      cursor: pointer;
+    }
+  }
+  &-centralsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .copyright {
+      margin: 0.5rem 0;
+    }
+  }
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  &-socialmedia {
+    margin-right: 2rem;
+    i {
+      margin: 0.5rem;
+    }
+  }
+}
+
+a {
+  color: $color-dark1;
+}

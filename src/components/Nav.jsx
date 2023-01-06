@@ -4,6 +4,7 @@ import "../scss/elements/_nav.scss";
 
 export default function Nav(backgroundColor) {
   const navigate = useNavigate();
+
   return (
     <nav className="page-nav" style={backgroundColor}>
       <ul className="page-nav-list">
@@ -17,14 +18,18 @@ export default function Nav(backgroundColor) {
       </ul>
       <div className="page-nav-logo">
         <i className="fa-solid fa-tree" />
-        <h2>Leszy</h2>
+        <h2 className="logo-name">Leszy</h2>
       </div>
       <ul className="page-nav-socialmedia">
         <li>
-          <i className="fa-brands fa-square-facebook" />
+          <a href="https://www.facebook.com/Rhaqluzja">
+            <i className="fa-brands fa-square-facebook" />
+          </a>
         </li>
         <li>
-          <i className="fa-brands fa-instagram" />
+          <a href="https://www.instagram.com/rhaqluzja/">
+            <i className="fa-brands fa-instagram" />
+          </a>
         </li>
       </ul>
     </nav>

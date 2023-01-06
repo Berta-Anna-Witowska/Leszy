@@ -1,0 +1,76 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+.contact {
+  display: flex;
+  .sidepanel {
+    width: 35%;
+    height: 100vh;
+    box-shadow: 3px 0 10px 0 $color-dark-transparent;
+    background-image: url("../../assets/bc8.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .overlay {
+      width: auto;
+      height: 100vh;
+      background-image: $gradient;
+      color: $color-white;
+      text-shadow: 0px 0px 10px $color-dark1;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        margin-top: 2rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .contact-form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input,
+    textarea {
+      width: 50%;
+      margin: 1rem;
+      padding: 0.2rem 0.1rem;
+
+      border: none;
+      //   border: solid 1px $color-dark-transparent;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 10px 0 $color-dark-transparent;
+
+      font-family: $font-base;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    input {
+      height: 2rem;
+    }
+    textarea {
+      overflow-y: scroll;
+    }
+    button {
+      height: 3rem;
+      width: 3rem;
+
+      font-size: 1.5rem;
+      color: $color-white;
+      text-transform: uppercase;
+
+      border: none;
+      box-shadow: 2px 2px 10px 0 $color-dark-transparent;
+      border-radius: 0.3rem;
+      background-color: $color-dark2;
+    }
+  }
+}

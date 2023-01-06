@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 
 import Nav from "./Nav";
+import Carousel from "./Carousel";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 
@@ -9,11 +10,10 @@ import product1pic from "../assets/images/jewellry/product-1.jpg";
 import "../scss/elements/_homepage.scss";
 
 export default function HomePage() {
-  // const background, setBackground = useState("#f1f1ef");
   return (
     <>
       <Nav backgroundColor="#26252788" />
-      <div className="header">
+      <div className="homepage-header">
         <div className="overlay">
           <img
             className="header-pic"
@@ -32,7 +32,7 @@ export default function HomePage() {
         <h2>"Jeden dotyk natury sprawia, że cały świat jest bliski."</h2>
         <h3>William Shakespeare</h3>
       </div>
-      <div className="homepage-pictures"></div>
+      <Carousel />
       <Newsletter backgroundColor="#f1f1ef" />
       <Footer />
     </>

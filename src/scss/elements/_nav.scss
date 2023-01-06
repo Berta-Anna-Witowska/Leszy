@@ -1,4 +1,5 @@
 @import "../settings/colors";
+@import "../settings/fonts";
 
 .page-nav {
   width: 97%;
@@ -19,13 +20,17 @@
   .page-nav-socialmedia {
     display: flex;
     flex-direction: row;
-
+    a {
+      color: $color-white;
+    }
     li {
       padding: 1rem;
 
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+
+      cursor: pointer;
     }
   }
 
@@ -37,11 +42,15 @@
     justify-content: center;
     position: absolute;
     left: 45%;
+    cursor: pointer;
+
     i {
       font-size: 2rem;
     }
     h2 {
+      font-size: 1.5rem;
       text-transform: uppercase;
+      margin-top: 0.2rem;
       padding: 0.2rem;
     }
   }
