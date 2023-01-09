@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Carousel from "./Carousel";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 
@@ -20,9 +21,10 @@ export default function Gallery() {
         </div>
       </div>
       <section className="gallery-images">
-        <h3 className="gallery-title">Biżuteria z serca natury</h3>
+        {/* <h3 className="gallery-title">Biżuteria z serca natury</h3> */}
 
         <div className="main-page-pictures gallery-pictures">
+          <Carousel />
           {/* tu mapowanie po linkach z pliku */}
           {/* <img src="./images/products/product-2.jpg" className="gallery-picture" /> */}
         </div>

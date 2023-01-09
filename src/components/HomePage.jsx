@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
 import Nav from "./Nav";
-import Carousel from "./Carousel";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 
